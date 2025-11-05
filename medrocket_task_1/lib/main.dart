@@ -77,3 +77,11 @@ class UserText extends StatelessWidget {
     );
   }
 }
+
+void _documentAddCardOnPress() {
+  
+}
+
+void _documentDeleteOnPress() {
+
+}
