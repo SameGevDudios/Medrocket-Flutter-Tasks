@@ -86,13 +86,12 @@ class NewDocumentPage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: const Color(0xFFFFF3CD),
+                color: const Color(0xFFF2D9FF),
                 borderRadius: BorderRadius.circular(16),
               ),
               child:  Expanded(
                     child: Text( infoText,
                       style: TextStyle(
-                        color: Colors.grey[800],
                         fontSize: 16,
                       ),
                     ),
