@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'poll_repository.dart';
+import '../../abstractions/poll_repository.dart';
 import '../models/poll.dart';
 
 class PollRepositoryMock implements PollRepository{
