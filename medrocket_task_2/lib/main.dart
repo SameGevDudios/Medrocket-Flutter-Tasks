@@ -1,20 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'data/repositories/poll_repository_mock.dart';
+import 'bloc/poll/poll_bloc.dart';
+import 'ui_pages/poll_page.dart';
 
-void main() {
-  runApp(const MainApp());
+void main(){
+  final mockRepository = PollRepositoryMock(percent: 67);
+
+  runApp(
+    RepositoryProvider.value(
+      value: mockRepository,
+      child: BlocProvider(
+        create: (context) => PollBloc(repository: mockRepository),
+        child: const PollApp(),
+      )
+    )
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class PollApp extends StatelessWidget {
+  const PollApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      title: 'Мок опросник',
+      home: const PollPage()
     );
   }
 }
