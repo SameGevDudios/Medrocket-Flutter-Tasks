@@ -1,2 +1,33 @@
 # Medrocket-Flutter-Tasks
-An entrance tasks for Medrocket internship
+# Flutter App
+
+Приложения, написанные на [Flutter](https://flutter.dev), для стажирвоки в Медрокет.
+
+## 🚀 Запуск проекта
+
+Убедитесь, что у вас установлен Flutter:  
+[Инструкция по установке Flutter](https://docs.flutter.dev/get-started/install)
+
+Далее выполните команды:
+
+```bash
+# Установить зависимости
+flutter pub get
+
+# Запустить приложение
+flutter run
+````
+
+## 🧩 Используемые пакеты
+
+Добавленные зависимости можно посмотреть в `pubspec.yaml`.
+
+## 💡 Особенности
+
+* Кроссплатформенность (Android, iOS, Web)
+* Современный UI на Flutter
+* Простая архитектура проекта
+
+## 📄 Лицензия
+
+Этот проект распространяется под лицензией [MIT](LICENSE).
